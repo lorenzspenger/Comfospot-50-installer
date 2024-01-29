@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         file:
-          - Comfospot-dist.yaml
+          - comfospot-dist.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2

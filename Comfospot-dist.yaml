@@ -13,7 +13,7 @@ substitutions:
 
 packages:
   restart_buttons:        !include restart.yaml
-  comfospot_50:           !include Comfospot_50.yaml
+  comfospot_50:           !include comfospot_50.yaml
   status led:             !include status_led.yaml
 
 esphome:
