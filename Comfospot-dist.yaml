@@ -1,0 +1,80 @@
+substitutions:
+  device_name:              Comfospot
+  friendly_name_fan:        Comfospot
+  gpio_led1:                GPIO0
+  gpio_led2:                GPIO3
+  gpio_led3:                GPIO1
+  gpio_led4:                GPIO4
+  gpio_led_filter_change:   GPIO10
+  gpio_led_error:           GPIO7 
+  gpio_output_plus:         GPIO5
+  gpio_output_minus:        GPIO6
+  gpio_status_led:          GPIO8
+
+packages:
+  restart_buttons:        !include restart.yaml
+  comfospot_50:           !include Comfospot_50.yaml
+  status led:             !include status_led.yaml
+
+esphome:
+  name: comfospot
+  friendly_name: Comfospot
+  platformio_options: 
+    board_build.flash_mode: dio
+    board_build.f_cpu: 80000000L
+  name_add_mac_suffix: true
+
+  project:
+    name: thatslolo.comfospot-50
+    version: "0.8"
+
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+    sdkconfig_options: 
+      CONFIG_ESP32C3_DEFAULT_CPU_FREQ_MHZ: "80"
+      CONFIG_ESP32C3_DEFAULT_CPU_FREQ_80: y
+
+# Enable logging
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+
+# Enable Home Assistant API
+api:
+  # on_client_connected:
+  #   - ble.disable:
+
+
+ota:
+
+dashboard_import:
+  package_import_url: github://thatslolo/comfospot-50/blob/esphome-temp/Software/Comfospot-dist.yaml
+  import_full_config: false # or true
+
+wifi:
+  ap:
+    password: ""
+  # on_connect:
+  #   then:
+  #   - wait_until:
+  #       condition:
+  #         wifi.connected:
+  #       timeout: 8s
+  #   - if:
+  #       condition:
+  #         wifi.connected:
+  #       then:
+  #       - delay: 5s
+  #       - ble.disable:
+
+captive_portal:
+
+# esp32_improv:
+#   authorizer: false
+
+# improv_serial:
+
+# esp32_ble:
+#   enable_on_boot: false
