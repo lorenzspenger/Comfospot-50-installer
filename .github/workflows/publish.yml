@@ -12,4 +12,4 @@ jobs:
       # CHANGEME: Set the filenames of your config files here:
       files: Comfospot-dist.yaml
       # CHANGEME: Set the name of your project here:
-      name: Comfospot 50
+      name: Comfospot-50
