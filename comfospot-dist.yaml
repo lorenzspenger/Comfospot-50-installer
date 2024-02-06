@@ -43,8 +43,7 @@ logger:
 
 # Enable Home Assistant API
 api:
-  # on_client_connected:
-  #   - ble.disable:
+
 
 
 ota:
@@ -56,25 +55,7 @@ dashboard_import:
 wifi:
   ap:
     password: ""
-  # on_connect:
-  #   then:
-  #   - wait_until:
-  #       condition:
-  #         wifi.connected:
-  #       timeout: 8s
-  #   - if:
-  #       condition:
-  #         wifi.connected:
-  #       then:
-  #       - delay: 5s
-  #       - ble.disable:
+
 
 captive_portal:
 
-# esp32_improv:
-#   authorizer: false
-
-# improv_serial:
-
-# esp32_ble:
-#   enable_on_boot: false
