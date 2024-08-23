@@ -44,9 +44,8 @@ logger:
 # Enable Home Assistant API
 api:
 
-
-
 ota:
+  platform: esphome
 
 dashboard_import:
   package_import_url: github://thatslolo/comfospot-50/blob/esphome-temp/Software/Comfospot-dist.yaml
