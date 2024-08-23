@@ -1,9 +1,0 @@
-{
-  "chipFamily": "ESP32-C3",
-  "parts": [
-    {
-      "path": "comfospot-esp32/comfospot-esp32.bin",
-      "offset": 0
-    }
-  ]
-}

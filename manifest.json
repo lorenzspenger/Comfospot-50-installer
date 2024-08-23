@@ -6,9 +6,13 @@
   "builds": [
     {
       "chipFamily": "ESP32-C3",
+      "ota": {
+        "path": "comfospot-esp32c3/comfospot-esp32c3.ota.bin",
+        "md5": "4cd253a0b7d0a0025e17640d438ded06"
+      },
       "parts": [
         {
-          "path": "comfospot-esp32/comfospot-esp32.bin",
+          "path": "comfospot-esp32c3/comfospot-esp32c3.factory.bin",
           "offset": 0
         }
       ]
