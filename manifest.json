@@ -8,7 +8,7 @@
       "chipFamily": "ESP32-C3",
       "ota": {
         "path": "comfospot-esp32c3/comfospot-esp32c3.ota.bin",
-        "md5": "4cd253a0b7d0a0025e17640d438ded06"
+        "md5": "a621caef75f54e5d748d08229d3fcb55"
       },
       "parts": [
         {
