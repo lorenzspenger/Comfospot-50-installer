@@ -1,6 +1,8 @@
 # About
 
-Add some information about your project here.
+Installer for the Comfospot 50 ESPHome Project.
+
+https://github.com/lorenzspenger/comfospot-50
 
 # Installation
 
