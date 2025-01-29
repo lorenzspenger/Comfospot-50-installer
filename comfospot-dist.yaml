@@ -43,6 +43,10 @@ logger:
 
 # Enable Home Assistant API
 api:
+  on_client_connected:
+    then:
+      - logger.log: "Home Assistant Client connected!"
+      - ble.disable:
 
 ota:
   platform: esphome
