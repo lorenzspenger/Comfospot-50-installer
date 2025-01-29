@@ -58,3 +58,5 @@ wifi:
 
 captive_portal:
 
+# Sets up the improv via serial client for Wi-Fi provisioning.
+improv_serial:
