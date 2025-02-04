@@ -22,7 +22,7 @@ jobs:
       matrix:
         #### Modify below here to match your project ####
         file:
-          - comfospot-dist.yaml
+          - comfospot-dist
         #### Modify above here to match your project ####
 
         esphome-version:
